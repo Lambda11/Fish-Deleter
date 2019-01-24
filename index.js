@@ -17,7 +17,7 @@ module.exports = function FishDeleter(mod) {
 		myGameId = event.gameId;
 	})
 	
-	mod.hook('S_INVEN', 16, (event) => {
+	mod.hook('S_INVEN', 17, (event) => {
 		if (!enabled) return;
 		
 		for (var i = 0; i < event.items.length; i++)
