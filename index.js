@@ -13,7 +13,7 @@ module.exports = function FishDeleter(mod) {
 		}
 	});
 	
-	mod.hook('S_LOGIN', mod.majorPatchVersion >= 81 ? 13 : 12, (event) => {
+	mod.hook('S_LOGIN', mod.majorPatchVersion >= 86 ? 14 : 13, (event) => {
 		myGameId = event.gameId;
 	})
 	
