@@ -19,7 +19,7 @@ module.exports = function FishDeleter(mod) {
 	
 	if(mod.majorPatchVersion >= 85)
 	{
-		mod.hook('S_ITEMLIST', 2, (event) => {
+		mod.hook('S_ITEMLIST', mod.majorPatchVersion >= 87 ? 3 : 2, (event) => {
 			if (!enabled) return;
 			
 			for (var i = 0; i < event.items.length; i++)
